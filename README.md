@@ -15,7 +15,7 @@ $ cd minecraft
 To compile using Go, `go get` the required modules and then `go build` to your desired location. You may also want to tidy the go modules, though this is optional
 
 ```bash
-$ go get -u
+$ go get
 $ go mod tidy
 $ go build -o build/minecraft
 ```
@@ -68,7 +68,6 @@ All configuration options are handled via environment variables
 
 | Name                                      | Description                                                                                     | Required                                      |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| `PN_MINECRAFT_KERBEROS_PASSWORD`          | Password used as part of the internal server data in Kerberos tickets                           | No (Default password `password` will be used) |
 | `PN_MINECRAFT_AUTHENTICATION_SERVER_PORT` | Port for the authentication server                                                              | Yes                                           |
 | `PN_MINECRAFT_SECURE_SERVER_HOST`         | Host name for the secure server (should point to the same address as the authentication server) | Yes                                           |
 | `PN_MINECRAFT_SECURE_SERVER_PORT`         | Port for the secure server                                                                      | Yes                                           |
